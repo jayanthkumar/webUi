@@ -1,0 +1,21 @@
+<p>
+  tree-view works!
+</p>
+
+<ag-grid-angular
+    #agGrid
+    style="width: 500px; height: 115px;"
+    id="myGrid"
+    class="ag-theme-fresh"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [rowModelType]="rowModelType"
+    [cacheBlockSize]="cacheBlockSize"
+    [rowGroupPanelShow]="rowGroupPanelShow"
+    [treeData]="true"
+    [animateRows]="true"
+    [groupDefaultExpanded]="groupDefaultExpanded"
+
+    [autoGroupColumnDef]="autoGroupColumnDef"
+    (gridReady)="onGridReady($event)"
+></ag-grid-angular>
